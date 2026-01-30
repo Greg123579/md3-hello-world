@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD3 Hello World</title>
+    <!-- Material Design 3 Web Components CDN -->
+    <script type="module" src="https://unpkg.com/@material/web@1.0.0-pre.15/all.js?module"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--md-sys-color-background);
+            color: var(--md-sys-color-on-background);
+        }
+        .container {
+            text-align: center;
+            padding: 24px;
+            border-radius: 12px;
+            background-color: var(--md-sys-color-surface-container-low);
+            box-shadow: var(--md-sys-elevation-level-2);
+        }
+        h1 {
+            color: var(--md-sys-color-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><md-icon>👋</md-icon> Hello, Material Design 3 World!</h1>
+        <md-text-button onclick="alert('You clicked the button!')">Click Me</md-text-button>
+    </div>
+</body>
+</html>
